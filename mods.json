@@ -16,6 +16,59 @@
     "vars": []
   },
   {
+    "id": "notify-dispatcher",
+    "name": "Notification Framework",
+    "author": "grimmdev",
+    "description": "Send styled toast notifications. Includes a bell icon in the header with a popup notification history panel.",
+    "version": "1.0.0",
+    "jellyfin": "10.11+",
+    "tags": ["ui", "server", "utility"],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/notification-framework.png",
+    "sourceUrl": "",
+    "cssUrl": null,
+    "jsUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/notification-framework-server.js",
+    "serverJs": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/notification-framework-client.js",
+    "permissions": ["jellyfin.read", "jellyfin.admin"],
+    "requires": [],
+    "vars": [
+      {
+        "key": "POSITION",
+        "name": "Toast Position",
+        "description": "Where toasts appear on screen. Options: top-right, top-left, bottom-right, bottom-left.",
+        "type": "text",
+        "default": "top-right"
+      },
+      {
+        "key": "MAX_TOASTS",
+        "name": "Max Visible Toasts",
+        "description": "Oldest toast is removed when this limit is exceeded.",
+        "type": "number",
+        "default": "5"
+      },
+      {
+        "key": "DEFAULT_TIMEOUT",
+        "name": "Default Toast Timeout (ms)",
+        "description": "How long each toast stays before auto-dismissing. Set to 0 for no auto-dismiss.",
+        "type": "number",
+        "default": "5000"
+      },
+      {
+        "key": "MAX_HISTORY",
+        "name": "Max Notification History",
+        "description": "How many notifications to keep in the bell panel history.",
+        "type": "number",
+        "default": "50"
+      }
+    ],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2025-04-27",
+        "notes": "Initial release. POST /send endpoint with all/user/session targeting. Styled toast UI with four types."
+      }
+    ]
+  },
+  {
     "id": "left-menu-framework",
     "name": "Left Menu Framework",
     "author": "grimmdev",
