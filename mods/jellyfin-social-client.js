@@ -13,7 +13,7 @@
 
     var cssString = [
         "/* Native page integration */",
-        "#" + PAGE_ID + " { background-color: var(--theme-background, #101010); color: var(--theme-text-color, #fff); }",
+        "#" + PAGE_ID + " { background-color: var(--theme-background, rgba(0,0,0,0)); color: var(--theme-text-color, #fff); }",
         "/* Aggressively hide Jellyfin's fallback and background pages when active */",
         "body[data-social-active='true'] #fallbackPage, ",
         "body[data-social-active='true'] .page:not(#" + PAGE_ID + "), ",
