@@ -8,7 +8,7 @@
     "jellyfin": "10.10+",
     "tags": ["homepage", "providers", "movies", "tv"],
     "cssUrl": "",
-    "sourceUrl": "",
+    "sourceUrl": "https://github.com/Snook-sudo/jellyfin-provider-streaming",
     "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/jellyfin-providers-horizontal-scroll.png",
     "jsUrl": "https://cdn.jsdelivr.net/gh/Snook-sudo/jellyfin-provider-streaming@main/jellyfin-providers-horizontal-scroll.js",
     "serverJs": "",
