@@ -1,5 +1,21 @@
 [
   {
+    "id": "jellyfin-providers-horizontal-scroll",
+    "name": "Jellyfin Providers",
+    "author": "Snook-sudo",
+    "description": "Add films and series from streaming providers directly to the home page.",
+    "version": "1.0.0",
+    "jellyfin": "10.10+",
+    "tags": ["homepage", "providers", "movies", "tv"],
+    "cssUrl": "",
+    "sourceUrl": "",
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/jellyfin-providers-horizontal-scroll.png",
+    "jsUrl": "https://cdn.jsdelivr.net/gh/Snook-sudo/jellyfin-provider-streaming@main/jellyfin-providers-horizontal-scroll.js",
+    "serverJs": "",
+    "permissions": [],
+    "vars": []
+  },
+  {
     "id": "left-menu-framework",
     "name": "Left Menu Framework",
     "author": "grimmdev",
