@@ -640,6 +640,41 @@
     ]
   },
   {
+    "id": "meilisearch-sync",
+    "name": "Meilisearch Search",
+    "author": "grimmdev",
+    "description": "Replaces Jellyfin's native search with Meilisearch. Keeps the index in sync automatically via item events. Requires an external initial bulk index for large libraries.",
+    "version": "1.0.0",
+    "jellyfin": "10.11+",
+    "tags": ["search", "ui", "server"],
+    "previewUrl": "",
+    "sourceUrl": "",
+    "cssUrl": null,
+    "jsUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/meilisearch-client.js",
+    "serverJs": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/meilisearch-server.js",
+    "permissions": ["http", "jellyfin.read", "store", "scheduler"],
+    "requires": [],
+    "changelog": [
+      { "version": "1.0.0", "date": "2025-04-28", "notes": "Initial release." }
+    ],
+    "vars": [
+      {
+        "key": "MEILISEARCH_URL",
+        "name": "Meilisearch URL",
+        "description": "Base URL of your Meilisearch instance, e.g. http://localhost:7700",
+        "type": "text",
+        "default": "http://localhost:7700"
+      },
+      {
+        "key": "MEILISEARCH_KEY",
+        "name": "Meilisearch API Key",
+        "description": "Your Meilisearch master key or a search-capable API key.",
+        "type": "text",
+        "default": ""
+      }
+    ]
+  },
+  {
     "id": "are-you-still-watching",
     "name": "Are you still watching?",
     "author": "grimmdev",
