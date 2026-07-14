@@ -1245,7 +1245,7 @@
     "name": "Multiview Livestream",
     "author": "Grimmdev",
     "description": "Multiview livestream functionality, with audio focus.",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "jellyfin": "10.11+",
     "tags": [
       "ui",
