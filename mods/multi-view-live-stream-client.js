@@ -91,6 +91,25 @@
             });
     }
 
+    function updateLayoutButtonStyles(selected) {
+        var btn1 = document.getElementById('btn-layout-1');
+        var btn2 = document.getElementById('btn-layout-2');
+        var btn4 = document.getElementById('btn-layout-4');
+        if (!btn1 || !btn2 || !btn4) return;
+
+        var buttons = [btn1, btn2, btn4];
+        buttons.forEach(function(btn) {
+            btn.style.background = '#222';
+            btn.style.borderColor = '#444';
+        });
+
+        var activeBtn = document.getElementById('btn-layout-' + selected);
+        if (activeBtn) {
+            activeBtn.style.background = '#00a4dc';
+            activeBtn.style.borderColor = '#00a4dc';
+        }
+    }
+
     function buildMultiViewUI() {
         var wrapper = document.createElement('div');
         wrapper.id = 'jf-multiview-wrapper';
@@ -102,6 +121,7 @@
         var layoutControls = document.createElement('div');
         layoutControls.innerHTML = 
             '<span style="color:white; margin-right:15px; font-weight:bold; font-family:sans-serif;">Layout:</span>' +
+            '<button id="btn-layout-1" style="background:#222; color:white; border:1px solid #444; padding:5px 15px; border-radius:4px; margin-right:10px; cursor:pointer; font-weight:bold;">1 Pane</button>' +
             '<button id="btn-layout-2" style="background:#222; color:white; border:1px solid #444; padding:5px 15px; border-radius:4px; margin-right:10px; cursor:pointer; font-weight:bold;">2 Panes</button>' +
             '<button id="btn-layout-4" style="background:#00a4dc; color:white; border:1px solid #00a4dc; padding:5px 15px; border-radius:4px; cursor:pointer; font-weight:bold;">4 Panes</button>';
         
@@ -120,18 +140,16 @@
         wrapper.appendChild(container);
         document.body.appendChild(wrapper);
 
+        document.getElementById('btn-layout-1').onclick = function() {
+            updateLayoutButtonStyles(1);
+            setGridLayout(1);
+        };
         document.getElementById('btn-layout-2').onclick = function() {
-            this.style.background = '#00a4dc';
-            this.style.borderColor = '#00a4dc';
-            document.getElementById('btn-layout-4').style.background = '#222';
-            document.getElementById('btn-layout-4').style.borderColor = '#444';
+            updateLayoutButtonStyles(2);
             setGridLayout(2);
         };
         document.getElementById('btn-layout-4').onclick = function() {
-            this.style.background = '#00a4dc';
-            this.style.borderColor = '#00a4dc';
-            document.getElementById('btn-layout-2').style.background = '#222';
-            document.getElementById('btn-layout-2').style.borderColor = '#444';
+            updateLayoutButtonStyles(4);
             setGridLayout(4);
         };
 
@@ -145,6 +163,7 @@
         }
         
         setGridLayout(currentLayout);
+        updateLayoutButtonStyles(currentLayout);
     }
 
     function setGridLayout(panes) {
@@ -152,14 +171,25 @@
         var grid = document.getElementById('jf-multiview-grid');
         if (!grid) return;
 
-        if (panes === 2) {
+        if (panes === 1) {
+            grid.style.gridTemplateColumns = 'minmax(0, 1fr)';
+            grid.style.gridTemplateRows = 'minmax(0, 1fr)';
+            activeGridCells[0].style.display = 'flex';
+            activeGridCells[1].style.display = 'none';
+            activeGridCells[2].style.display = 'none';
+            activeGridCells[3].style.display = 'none';
+        } else if (panes === 2) {
             grid.style.gridTemplateColumns = 'minmax(0, 1fr)';
             grid.style.gridTemplateRows = 'minmax(0, 1fr) minmax(0, 1fr)';
+            activeGridCells[0].style.display = 'flex';
+            activeGridCells[1].style.display = 'flex';
             activeGridCells[2].style.display = 'none';
             activeGridCells[3].style.display = 'none';
         } else {
             grid.style.gridTemplateColumns = 'minmax(0, 1fr) minmax(0, 1fr)';
             grid.style.gridTemplateRows = 'minmax(0, 1fr) minmax(0, 1fr)';
+            activeGridCells[0].style.display = 'flex';
+            activeGridCells[1].style.display = 'flex';
             activeGridCells[2].style.display = 'flex';
             activeGridCells[3].style.display = 'flex';
         }
