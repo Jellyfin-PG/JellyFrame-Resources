@@ -1,16 +1,16 @@
 [
   {
-    "id": "jellyfin-leaderboard",
-    "name": "Jellyfin Leaderboard",
+    "id": "jellyfin-server-statistics-page",
+    "name": "Jellyfin Server Statistics Page",
     "author": "Grimmdev",
-    "description": "Very basic leaderboard, using only jellyfin api's, calculating watch totals through items viewed and item lengths.",
+    "description": "Server statistics page for jellyfin, add to the left hand menu.",
     "version": "1.0.0",
     "jellyfin": "10.10+",
     "tags": ["homepage", "movies", "tv"],
     "cssUrl": "",
     "sourceUrl": "",
-    "previewUrl": "",
-    "jsUrl": "https://raw.githubusercontent.com/Jellyfin-PG/JellyFrame-Resources/refs/heads/main/mods/leaderboard-client.js",
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/server-statistics-page.png",
+    "jsUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/server-statistics-page-client.js",
     "serverJs": "",
     "permissions": [],
     "vars": []
