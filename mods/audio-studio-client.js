@@ -191,7 +191,7 @@
                     '<div class="jf-section-title">Volume Booster <button class="jf-btn-reset" onclick="window.jfResetBoost()">Reset</button></div>' +
                     '<div class="jf-boost-row">' +
                         '<span class="material-icons" style="font-size:18px; color:#888;">volume_up</span>' +
-                        '<input type="range" id="jf-boost-range" class="jf-slider" min="1" max="3" step="0.1" oninput="window.jfSetBoost(this.value)">' +
+                        '<input type="range" id="jf-boost-range" class="jf-slider" min="1" max="10" step="0.1" oninput="window.jfSetBoost(this.value)">' +
                         '<span id="jf-boost-text" class="jf-boost-label">100%</span>' +
                     '</div>' +
                 '</div>' +
