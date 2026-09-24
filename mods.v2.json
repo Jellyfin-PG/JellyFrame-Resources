@@ -1,0 +1,2754 @@
+[
+  {
+    "id": "jellyfin-server-statistics-page",
+    "name": "Jellyfin Server Statistics Page",
+    "author": "Grimmdev",
+    "description": "Server statistics page for jellyfin, add to the left hand menu.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.10+",
+    "tags": [
+      "homepage",
+      "movies",
+      "tv"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/server-statistics-page.png",
+    "screenshots": [],
+    "sourceUrl": "",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/server-statistics-page-client.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.10+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jellyfin-providers-horizontal-scroll",
+    "name": "Jellyfin Providers",
+    "author": "Snook-sudo",
+    "description": "Add films and series from streaming providers directly to the home page.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.10+",
+    "tags": [
+      "homepage",
+      "providers",
+      "movies",
+      "tv"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/jellyfin-providers-horizontal-scroll.png",
+    "screenshots": [],
+    "sourceUrl": "https://github.com/Snook-sudo/jellyfin-provider-streaming",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Snook-sudo/jellyfin-provider-streaming@main/jellyfin-providers-horizontal-scroll.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.10+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "notify-dispatcher",
+    "name": "Notification Framework",
+    "author": "grimmdev",
+    "description": "Send styled toast notifications. Includes a bell icon in the header with a popup notification history panel.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.11+",
+    "tags": [
+      "ui",
+      "server",
+      "utility"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/notification-framework.png",
+    "screenshots": [],
+    "sourceUrl": "",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/notification-framework-client.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      },
+      {
+        "type": "server",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/notification-framework-server.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Server backend script"
+        ]
+      }
+    ],
+    "permissions": [
+      "jellyfin.read",
+      "jellyfin.admin"
+    ],
+    "requires": [],
+    "preconnect": [],
+    "vars": [
+      {
+        "key": "POSITION",
+        "name": "Toast Position",
+        "description": "Where toasts appear on screen. Options: top-right, top-left, bottom-right, bottom-left.",
+        "type": "text",
+        "default": "top-right"
+      },
+      {
+        "key": "MAX_TOASTS",
+        "name": "Max Visible Toasts",
+        "description": "Oldest toast is removed when this limit is exceeded.",
+        "type": "number",
+        "default": "5"
+      },
+      {
+        "key": "DEFAULT_TIMEOUT",
+        "name": "Default Toast Timeout (ms)",
+        "description": "How long each toast stays before auto-dismissing. Set to 0 for no auto-dismiss.",
+        "type": "number",
+        "default": "5000"
+      },
+      {
+        "key": "MAX_HISTORY",
+        "name": "Max Notification History",
+        "description": "How many notifications to keep in the bell panel history.",
+        "type": "number",
+        "default": "50"
+      }
+    ],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2025-04-27",
+        "changes": [
+          "Initial release. POST /send endpoint with all/user/session targeting. Styled toast UI with four types."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "left-menu-framework",
+    "name": "Left Menu Framework",
+    "author": "grimmdev",
+    "description": "A mod that cleans up the left menu.",
+    "version": "1.0.5",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.10+",
+    "tags": [
+      "menus"
+    ],
+    "previewUrl": "",
+    "screenshots": [],
+    "sourceUrl": "",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/left-menu-framework-client.min.js",
+        "version": "1.0.5",
+        "date": "2026-09-15",
+        "jellyfin": "10.10+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.5",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "logo-replacer",
+    "name": "Logo Replacer",
+    "author": "grimmdev",
+    "description": "A mod that replaces the jellyfin logo with whatever you want.",
+    "version": "1.0.1",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.10+",
+    "tags": [
+      "logo"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/logo-replacer.png",
+    "screenshots": [],
+    "sourceUrl": "",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/logo-replacer-client.min.js",
+        "version": "1.0.1",
+        "date": "2026-09-15",
+        "jellyfin": "10.10+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [],
+    "preconnect": [],
+    "vars": [
+      {
+        "key": "CUSTOM_LOGO_URL",
+        "name": "Custom Logo URL",
+        "description": "Direct link to your custom logo image (PNG/SVG/WebP).",
+        "type": "text",
+        "default": ""
+      }
+    ],
+    "changelog": [
+      {
+        "version": "1.0.1",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "version-player",
+    "name": "Player Versions",
+    "author": "ShadowZer0",
+    "description": "With a single click, you can switch between multiple stored versions of the same file (e.g., 4K Remux, 1080p BluRay, WEB-DL, Ger Dub, Eng Sub) without navigating through menus. Make sure to merge Movies and Episodes.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.10+",
+    "tags": [
+      "player",
+      "shows",
+      "movies"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/version-player.png",
+    "screenshots": [],
+    "sourceUrl": "https://github.com/Zer0JellyHub/Version-Player",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/version-player-client.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.10+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [
+      "jellyfin.read"
+    ],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "coming-up-show",
+    "name": "Episodes Coming Up",
+    "author": "ShadowZer0",
+    "description": "A custom tab for Jellyfin that opens a 'Coming Up' popup directly on the home screen — styled with a sleek glassmorphism effect to perfectly match the Ultrachromic theme.",
+    "version": "1.0.1",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.10+",
+    "tags": [
+      "schedule",
+      "shows"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/coming-up-show.png",
+    "screenshots": [],
+    "sourceUrl": "https://github.com/Zer0JellyHub/Calendar",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/coming-up-show-client.min.js",
+        "version": "1.0.1",
+        "date": "2026-09-15",
+        "jellyfin": "10.10+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [
+      "jellyfin.read"
+    ],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.1",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jellyfin-social",
+    "name": "Jellyfin Social",
+    "author": "grimmdev",
+    "description": "A social network for your Jellyfin server where users can share thoughts, recommendations and more.",
+    "version": "1.0.1",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.10+",
+    "tags": [
+      "social",
+      "ui",
+      "server"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/jellyfin-social.png",
+    "screenshots": [],
+    "sourceUrl": "",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/jellyfin-social-client.js",
+        "version": "1.0.1",
+        "date": "2026-09-15",
+        "jellyfin": "10.10+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      },
+      {
+        "type": "server",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/jellyfin-social-server.js",
+        "version": "1.0.1",
+        "date": "2026-09-15",
+        "jellyfin": "10.10+",
+        "changelog": [
+          "Server backend script"
+        ]
+      }
+    ],
+    "permissions": [
+      "jellyfin.read",
+      "db"
+    ],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.1",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kefinframe",
+    "name": "KefinFrame",
+    "author": "grimmdev",
+    "description": "A comprehensive Jellyfin enhancement suite: per-user watchlist, skin/appearance switcher, custom home screen sections, enhanced keyboard search, and custom navigation links. Inspired by KefinTweaks, rebuilt natively for JellyFrame.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.11+",
+    "tags": [
+      "ui",
+      "server",
+      "watchlist",
+      "search",
+      "home",
+      "skins"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/kefinframe.png",
+    "screenshots": [],
+    "sourceUrl": "",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/kefinframe-client.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      },
+      {
+        "type": "server",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/kefinframe-server.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Server backend script"
+        ]
+      }
+    ],
+    "permissions": [
+      "jellyfin.read",
+      "jellyfin.write",
+      "store",
+      "scheduler"
+    ],
+    "requires": [],
+    "preconnect": [],
+    "vars": [
+      {
+        "key": "ACCENT_COLOR",
+        "name": "Accent Color",
+        "description": "Primary highlight color used in the KefinFrame UI panels.",
+        "type": "color",
+        "default": "#00a4dc",
+        "allowGradient": false
+      }
+    ],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-04-23",
+        "changes": [
+          "Initial release. Features: per-user watchlist (bookmark toggle on all cards), skin/appearance switcher in header, custom home screen sections, enhanced search overlay (/ or Ctrl+K), custom nav links, settings panel with export/import/reset."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jelly-assistant",
+    "name": "JellyAssistant",
+    "author": "grimmdev",
+    "description": "High-speed free AI chat via OpenRouter. Use :free models for no-cost chatting.",
+    "version": "1.0.2",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.11+",
+    "tags": [
+      "ui",
+      "ai",
+      "free",
+      "openrouter",
+      "assistant"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/jelly-assistant.png",
+    "screenshots": [],
+    "sourceUrl": "",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/jelly-assistant-client.js",
+        "version": "1.0.2",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      },
+      {
+        "type": "server",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/jelly-assistant-server.js",
+        "version": "1.0.2",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Server backend script"
+        ]
+      }
+    ],
+    "permissions": [
+      "http",
+      "jellyfin.read"
+    ],
+    "requires": [],
+    "preconnect": [],
+    "vars": [
+      {
+        "key": "API_URL",
+        "name": "OpenRouter API URL",
+        "type": "text",
+        "default": "https://openrouter.ai/api/v1/chat/completions"
+      },
+      {
+        "key": "API_KEY",
+        "name": "OpenRouter API Key",
+        "type": "text",
+        "default": ""
+      },
+      {
+        "key": "MODEL",
+        "name": "Model Name",
+        "type": "text",
+        "default": "openrouter/free"
+      },
+      {
+        "key": "ENABLE_LIBRARY_READ_ACCESS",
+        "name": "Enable Library Read Access",
+        "description": "Allows the AI to read your library stats and latest items to provide personalized answers.",
+        "type": "boolean",
+        "default": "false",
+        "trueValue": "1",
+        "falseValue": "0"
+      }
+    ],
+    "changelog": [
+      {
+        "version": "1.0.2",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "smart-recommendations",
+    "name": "Smart Recommendations",
+    "author": "grimmdev",
+    "description": "An algorithmic recommendation engine based on your favorite genres and tags.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.11+",
+    "tags": [
+      "ui",
+      "server",
+      "algorithm"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/smart-recommendations.png",
+    "screenshots": [],
+    "sourceUrl": "",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/smart-recommendations-client.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      },
+      {
+        "type": "server",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/smart-recommendations-server.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Server backend script"
+        ]
+      }
+    ],
+    "permissions": [
+      "jellyfin.read"
+    ],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jellyfin-wallpaper",
+    "name": "Jellyfin Wallpaper",
+    "author": "grimmdev",
+    "description": "Live and Static wallpaper for jellyfin, supports vimeo, direct links and also item id from your library to play that movie.",
+    "version": "1.2.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.9+",
+    "editorsChoice": true,
+    "tags": [
+      "ui",
+      "personalization"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/jellyfin-wallpaper.png",
+    "screenshots": [],
+    "sourceUrl": "",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/jellyfin-wallpaper-client.min.js",
+        "version": "1.2.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.9+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [],
+    "preconnect": [],
+    "vars": [
+      {
+        "key": "IMAGE_URL",
+        "name": "Static Wallpaper URL",
+        "description": "URL to a static image (jpg, png, webp, etc.) to use as the homepage wallpaper. Leave empty for the built-in default.",
+        "type": "text",
+        "default": ""
+      },
+      {
+        "key": "VIDEO_URL",
+        "name": "Live Wallpaper Source",
+        "description": "Vimeo URL (e.g. https://vimeo.com/439940966), a direct video URL (mp4/webm), or a Jellyfin item ID (32-char hex). Leave empty for the built-in default.",
+        "type": "text",
+        "default": ""
+      }
+    ],
+    "changelog": [
+      {
+        "version": "1.2.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "meow",
+    "name": "Meow",
+    "author": "grimmdev",
+    "description": "After a recent meme, I decided to turn jellyfin into a cat, every word becomes meow, warning do not use without being familiar with navigation.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.9+",
+    "tags": [
+      "ui",
+      "animals"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/meow.png",
+    "screenshots": [],
+    "sourceUrl": "",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/meow-client.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.9+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "quick-queue",
+    "name": "Watch Queue",
+    "author": "grimmdev",
+    "description": "A personal watch queue. Add movies or episodes from any card or detail page, reorder them, and play in sequence or shuffle.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.9+",
+    "tags": [
+      "ui",
+      "playback",
+      "queue"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/quick-queue.png",
+    "screenshots": [],
+    "sourceUrl": "",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/quick-queue-client.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.9+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "user-theme",
+    "name": "User Theme Selector",
+    "author": "grimmdev",
+    "description": "Allows individual users to override the server theme from their preferences menu.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.9+",
+    "tags": [
+      "ui",
+      "personalization",
+      "themes"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/user-theme.png",
+    "screenshots": [
+      "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/user-theme-screenshot-01.png"
+    ],
+    "sourceUrl": "",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/user-theme-client.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.9+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      },
+      {
+        "type": "server",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/user-theme-server.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.9+",
+        "changelog": [
+          "Server backend script"
+        ]
+      }
+    ],
+    "permissions": [
+      "store",
+      "http"
+    ],
+    "requires": [],
+    "preconnect": [],
+    "vars": [
+      {
+        "key": "THEMES_URL",
+        "name": "Themes JSON URL",
+        "description": "URL to a valid themes.json catalog.",
+        "type": "text",
+        "default": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/themes.json"
+      }
+    ],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "audio-studio",
+    "name": "Audio Studio",
+    "author": "grimmdev",
+    "description": "Feature complete audio studio for videos, EQ, custom EQ, volume booster.",
+    "version": "1.3.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.10+",
+    "tags": [
+      "ui",
+      "videos"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/audio-studio.png",
+    "screenshots": [],
+    "sourceUrl": "",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/audio-studio-client.v4.min.js",
+        "version": "1.3.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.10+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.3.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "screensaver",
+    "name": "Screensaver",
+    "author": "grimmdev",
+    "description": "After 30 minutes of idle, one of four screensaver designs, with user chosen styles.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.10+",
+    "tags": [
+      "ui",
+      "idle",
+      "theme"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/screensaver.png",
+    "screenshots": [],
+    "sourceUrl": "",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/screensaver-client.min.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.10+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "responsive-header-right-menu",
+    "name": "Responsive Header Right Menu",
+    "author": "grimmdev",
+    "description": "Automatically moves crowded header icons into a slick, slide-out 'More Options' menu on smaller screens.",
+    "version": "2.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.10+",
+    "tags": [
+      "ui",
+      "responsive",
+      "theme"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/responsive-header-right-menu.png",
+    "screenshots": [],
+    "sourceUrl": "",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/responsive-header-right-menu-client.v2.min.js",
+        "version": "2.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.10+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "2.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jelly-rpg",
+    "name": "Jelly RPG",
+    "author": "grimmdev",
+    "description": "Turn your jellyfin into a role playing game.",
+    "version": "2.1.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.10+",
+    "tags": [
+      "ui",
+      "server",
+      "gamification",
+      "rpg"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/jelly-rpg.png",
+    "screenshots": [],
+    "sourceUrl": "",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/jelly-rpg-client.v2.js",
+        "version": "2.1.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.10+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      },
+      {
+        "type": "server",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/jelly-rpg-server.v2.js",
+        "version": "2.1.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.10+",
+        "changelog": [
+          "Server backend script"
+        ]
+      }
+    ],
+    "permissions": [
+      "jellyfin.read",
+      "jellyfin.write",
+      "store",
+      "scheduler"
+    ],
+    "requires": [],
+    "preconnect": [],
+    "vars": [
+      {
+        "key": "XP_COLOR",
+        "name": "Theme Color",
+        "description": "The primary color for progress bars, stats, and highlights.",
+        "type": "color",
+        "default": "#8a2be2",
+        "allowGradient": true
+      },
+      {
+        "key": "LEVEL_UP_COLOR",
+        "name": "Level Up Flash Color",
+        "description": "The color used for the massive LEVEL UP text on the screen.",
+        "type": "color",
+        "default": "#ffd700"
+      },
+      {
+        "key": "GLOBAL_XP_MULTIPLIER",
+        "name": "Global XP Multiplier",
+        "description": "Scale all XP gained globally (e.g., 1.5 for 50% more XP).",
+        "type": "text",
+        "default": "1.0"
+      },
+      {
+        "key": "BASE_XP_MOVIE",
+        "name": "Base XP (Movie)",
+        "description": "Base experience points rewarded for finishing a Movie.",
+        "type": "number",
+        "default": "150"
+      },
+      {
+        "key": "BASE_XP_EPISODE",
+        "name": "Base XP (Episode)",
+        "description": "Base experience points rewarded for finishing an Episode.",
+        "type": "number",
+        "default": "50"
+      },
+      {
+        "key": "DAILY_QUEST_COUNT",
+        "name": "Daily Quest Count",
+        "description": "How many bounties a user receives each day (1 to 6).",
+        "type": "number",
+        "default": "3"
+      }
+    ],
+    "changelog": [
+      {
+        "version": "2.1.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hot-library",
+    "name": "Hot Library Heatmap",
+    "author": "grimmdev",
+    "description": "Posters emit a glow determined by all users watch history.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.11+",
+    "tags": [
+      "ui",
+      "server"
+    ],
+    "previewUrl": "",
+    "screenshots": [],
+    "sourceUrl": "",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/hot-library-client.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      },
+      {
+        "type": "server",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/hot-library-server.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Server backend script"
+        ]
+      }
+    ],
+    "permissions": [
+      "jellyfin.read"
+    ],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "community-ratings",
+    "name": "Community Ratings",
+    "author": "grimmdev",
+    "description": "Let every user rate media 0-10. Shows aggregate star ratings on all media cards (home, library, favorites) and a full interactive widget on detail pages.",
+    "version": "1.3.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.11+",
+    "tags": [
+      "ratings",
+      "community",
+      "ui",
+      "server"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/community-ratings.png",
+    "screenshots": [],
+    "sourceUrl": "",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/community-ratings-client.v3.js",
+        "version": "1.3.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      },
+      {
+        "type": "server",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/community-ratings-server.js",
+        "version": "1.3.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Server backend script"
+        ]
+      }
+    ],
+    "permissions": [
+      "jellyfin.read",
+      "store"
+    ],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.3.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "home-app-layout",
+    "name": "Home App Layout",
+    "author": "grimmdev",
+    "description": "A layout framework for home page app/cards.",
+    "version": "1.0.3",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.10+",
+    "tags": [
+      "home",
+      "ui"
+    ],
+    "previewUrl": "",
+    "screenshots": [],
+    "sourceUrl": "https://jellyfin-pg.github.io/JellyFrame/",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/app-layout.min.js",
+        "version": "1.0.3",
+        "date": "2026-09-15",
+        "jellyfin": "10.10+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [],
+    "preconnect": [],
+    "vars": [
+      {
+        "key": "SECTION_TITLE",
+        "name": "Section Title",
+        "description": "What to name the visual layout header.",
+        "type": "text",
+        "default": "Apps"
+      }
+    ],
+    "changelog": [
+      {
+        "version": "1.0.3",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "home-page-editor",
+    "name": "Home Page Editor",
+    "author": "grimmdev",
+    "description": "A visual editor for apps and the homepage.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.10+",
+    "tags": [
+      "home",
+      "ui"
+    ],
+    "previewUrl": "",
+    "screenshots": [],
+    "sourceUrl": "https://jellyfin-pg.github.io/JellyFrame/",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/homepage-editor.min.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.10+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [
+      "home-app-layout"
+    ],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "custom-synthetic-tabs",
+    "name": "Custom Synthetic Tabs",
+    "author": "yourname",
+    "description": "Adds a custom tab to the UI that loads a synthetic HTML page with its own isolated JS/CSS.",
+    "version": "1.0.1",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.10+",
+    "tags": [
+      "ui",
+      "server"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/custom-tab.png",
+    "screenshots": [],
+    "sourceUrl": "https://jellyfin-pg.github.io/JellyFrame/",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/custom-tab-client.js",
+        "version": "1.0.1",
+        "date": "2026-09-15",
+        "jellyfin": "10.10+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      },
+      {
+        "type": "server",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/custom-tab-server.js",
+        "version": "1.0.1",
+        "date": "2026-09-15",
+        "jellyfin": "10.10+",
+        "changelog": [
+          "Server backend script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [],
+    "preconnect": [],
+    "vars": [
+      {
+        "key": "TAB_NAME",
+        "name": "Tab Name",
+        "description": "The label shown on the custom tab.",
+        "type": "text",
+        "default": "Custom Page"
+      },
+      {
+        "key": "TAB_TOP_OFFSET",
+        "name": "Tab Top Offset",
+        "description": "Adjust this based on your theme to place the page perfectly under the top bar.",
+        "type": "text",
+        "default": "115px"
+      },
+      {
+        "key": "CUSTOM_HTML",
+        "name": "Custom HTML Content",
+        "description": "The raw HTML, CSS, and JS to load inside the synthetic page.",
+        "type": "text",
+        "default": "<!DOCTYPE html><html><head><style>body { color: white; font-family: sans-serif; padding: 2rem; }</style></head><body><h1>Welcome to your custom page!</h1><button onclick=\"alert('JS works!')\">Test JS</button></body></html>"
+      }
+    ],
+    "changelog": [
+      {
+        "version": "1.0.1",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "media-bar",
+    "name": "Media Bar",
+    "author": "grimmdev",
+    "description": "A featured content slideshow bar on the Jellyfin home page. Showcases backdrop images, logos, ratings, genres, and plot summaries for your media with auto-advancing slides, navigation arrows, and play/detail/favourite buttons. Configure a playlist ID for curated content or let it pick from your latest additions automatically.",
+    "version": "1.0.3",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.10+",
+    "tags": [
+      "home",
+      "slideshow",
+      "featured",
+      "ui"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/media-bar.png",
+    "screenshots": [],
+    "sourceUrl": "https://jellyfin-pg.github.io/JellyFrame/",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/media-bar-client.js",
+        "version": "1.0.3",
+        "date": "2026-09-15",
+        "jellyfin": "10.10+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      },
+      {
+        "type": "css",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/media-bar-style.css",
+        "version": "1.0.3",
+        "date": "2026-09-15",
+        "jellyfin": "10.10+",
+        "changelog": [
+          "Custom stylesheet"
+        ]
+      },
+      {
+        "type": "server",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/media-bar-server.js",
+        "version": "1.0.3",
+        "date": "2026-09-15",
+        "jellyfin": "10.10+",
+        "changelog": [
+          "Server backend script"
+        ]
+      }
+    ],
+    "permissions": [
+      "jellyfin.read",
+      "jellyfin.write",
+      "store",
+      "scheduler"
+    ],
+    "requires": [
+      "home-app-layout"
+    ],
+    "preconnect": [],
+    "vars": [
+      {
+        "key": "PLAYLIST_ID",
+        "name": "Playlist ID",
+        "description": "Jellyfin item ID of a playlist to use as the source for the bar. Leave blank to use the latest additions from your library.",
+        "type": "text",
+        "default": ""
+      },
+      {
+        "key": "ITEM_IDS",
+        "name": "Manual Item IDs",
+        "description": "Comma-separated list of Jellyfin item IDs to feature. Ignored if Playlist ID is set.",
+        "type": "text",
+        "default": ""
+      },
+      {
+        "key": "ITEM_COUNT",
+        "name": "Number of Items",
+        "description": "How many items to show in the bar (1–20).",
+        "type": "number",
+        "default": "10"
+      },
+      {
+        "key": "SLIDE_INTERVAL",
+        "name": "Slide Interval (ms)",
+        "description": "How long each slide is shown before auto-advancing. Default is 8000 (8 seconds).",
+        "type": "number",
+        "default": "8000"
+      },
+      {
+        "key": "SHUFFLE",
+        "name": "Shuffle Items",
+        "description": "Randomise the order of items each time the bar loads.",
+        "type": "boolean",
+        "default": "true"
+      }
+    ],
+    "changelog": [
+      {
+        "version": "1.0.3",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "meilisearch-sync",
+    "name": "Meilisearch Search",
+    "author": "grimmdev",
+    "description": "Replaces Jellyfin's native search with Meilisearch. Keeps the index in sync automatically via item events. Requires an external initial bulk index for large libraries.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.11+",
+    "tags": [
+      "search",
+      "ui",
+      "server"
+    ],
+    "previewUrl": "",
+    "screenshots": [],
+    "sourceUrl": "",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/meilisearch-client.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      },
+      {
+        "type": "server",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/meilisearch-server.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Server backend script"
+        ]
+      }
+    ],
+    "permissions": [
+      "http",
+      "jellyfin.read",
+      "store",
+      "scheduler"
+    ],
+    "requires": [],
+    "preconnect": [],
+    "vars": [
+      {
+        "key": "MEILISEARCH_URL",
+        "name": "Meilisearch URL",
+        "description": "Base URL of your Meilisearch instance, e.g. http://localhost:7700",
+        "type": "text",
+        "default": "http://localhost:7700"
+      },
+      {
+        "key": "MEILISEARCH_KEY",
+        "name": "Meilisearch API Key",
+        "description": "Your Meilisearch master key or a search-capable API key.",
+        "type": "text",
+        "default": ""
+      }
+    ],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2025-04-28",
+        "changes": [
+          "Initial release."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "are-you-still-watching",
+    "name": "Are you still watching?",
+    "author": "grimmdev",
+    "description": "Shows an 'Are you still watching?' prompt after a period of inactivity during playback. If not dismissed, the player exits automatically. Fully configurable timing, text, and colours.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.10+",
+    "tags": [
+      "player",
+      "idle",
+      "utility"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/are-you-still-watching.png",
+    "screenshots": [],
+    "sourceUrl": "https://jellyfin-pg.github.io/JellyFrame/",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/are-you-still-watching-client.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.10+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [],
+    "preconnect": [],
+    "vars": [
+      {
+        "key": "IDLE_MINUTES",
+        "name": "Idle Time (minutes)",
+        "description": "How many minutes of uninterrupted playback before the prompt appears. Default is 180 (3 hours).",
+        "type": "number",
+        "default": "180"
+      },
+      {
+        "key": "PROMPT_SECONDS",
+        "name": "Prompt Timeout (seconds)",
+        "description": "How many seconds the prompt stays on screen before the player exits. Default is 60.",
+        "type": "number",
+        "default": "60"
+      },
+      {
+        "key": "PROMPT_TEXT",
+        "name": "Prompt Message",
+        "description": "The heading text shown on the prompt overlay.",
+        "type": "text",
+        "default": "Are you still watching?"
+      },
+      {
+        "key": "BUTTON_TEXT",
+        "name": "Button Label",
+        "description": "Text on the continue watching button.",
+        "type": "text",
+        "default": "Continue Watching"
+      },
+      {
+        "key": "BUTTON_COLOR",
+        "name": "Button Color",
+        "description": "Background color of the continue watching button.",
+        "type": "color",
+        "default": "#10b981"
+      },
+      {
+        "key": "TEXT_COLOR",
+        "name": "Text Color",
+        "description": "Color of the prompt heading and countdown text.",
+        "type": "color",
+        "default": "#ffffff"
+      },
+      {
+        "key": "OVERLAY_COLOR",
+        "name": "Overlay Background",
+        "description": "Background color of the overlay. Use rgba() for transparency, e.g. rgba(0,0,0,0.85).",
+        "type": "text",
+        "default": "rgba(0,0,0,0.85)"
+      }
+    ],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "media-request",
+    "name": "Media Request",
+    "author": "grimmdev",
+    "description": "Adds a Request Media button to the left-hand navigation menu. Users can submit requests for movies, TV shows, music, or any configured media type. Requests are stored server-side and optionally forwarded to a webhook (Discord, Slack, custom).",
+    "version": "1.0.3",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.10+",
+    "tags": [
+      "ui",
+      "requests",
+      "community"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/media-request.png",
+    "screenshots": [],
+    "sourceUrl": "https://jellyfin-pg.github.io/JellyFrame/",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/media-request-client.v2.js",
+        "version": "1.0.3",
+        "date": "2026-09-15",
+        "jellyfin": "10.10+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      },
+      {
+        "type": "server",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/media-request-server.v2.js",
+        "version": "1.0.3",
+        "date": "2026-09-15",
+        "jellyfin": "10.10+",
+        "changelog": [
+          "Server backend script"
+        ]
+      }
+    ],
+    "permissions": [
+      "store",
+      "webhooks",
+      "jellyfin.read",
+      "jellyfin.write"
+    ],
+    "requires": [],
+    "preconnect": [],
+    "vars": [
+      {
+        "key": "MENU_LABEL",
+        "name": "Menu Button Label",
+        "description": "Text shown on the navigation menu button.",
+        "type": "text",
+        "default": "Request Media"
+      },
+      {
+        "key": "ACCENT_COLOR",
+        "name": "Accent Color",
+        "description": "Color used for the submit button and input focus ring.",
+        "type": "color",
+        "default": "#00a4dc"
+      },
+      {
+        "key": "ALLOW_TYPES",
+        "name": "Media Types",
+        "description": "Comma-separated list of request types shown in the dropdown. e.g. Movie, TV Show, Music, Anime, Other",
+        "type": "text",
+        "default": "Movie, TV Show, Music, Anime, Other"
+      },
+      {
+        "key": "WEBHOOK_URL",
+        "name": "Webhook URL",
+        "description": "Optional. POST each new request to this URL (Discord, Slack, or any HTTP endpoint). Leave blank to disable.",
+        "type": "text",
+        "default": ""
+      },
+      {
+        "key": "WEBHOOK_SECRET",
+        "name": "Webhook Secret",
+        "description": "Optional. If set, signs the webhook payload with HMAC-SHA256 and adds an X-Hub-Signature-256 header.",
+        "type": "text",
+        "default": ""
+      }
+    ],
+    "changelog": [
+      {
+        "version": "1.0.3",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "vision",
+    "name": "Vision (X-ray alt)",
+    "author": "grimmdev",
+    "description": "An alternative to amazon's X-ray feature, presents information from wikipedia.",
+    "version": "2.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.11+",
+    "tags": [
+      "ui",
+      "video",
+      "movies",
+      "episodes"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/Custom-Mods@main/Vision/thumbnail.png",
+    "screenshots": [],
+    "sourceUrl": "https://github.com/Jellyfin-PG/Custom-Mods/tree/main/Vision",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/vision-client.v2.js",
+        "version": "2.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [
+      "jellyfin.read"
+    ],
+    "requires": [],
+    "preconnect": [
+      "https://en.wikipedia.org"
+    ],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "2.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "video-tuner",
+    "name": "Video Tuner",
+    "author": "grimmdev",
+    "description": "Adds brightness, contrast, saturation, sharpness and denoise controls to the Jellyfin video player.",
+    "version": "1.2.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.11+",
+    "tags": [
+      "player",
+      "video"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/Custom-Mods@main/VideoTuner/thumbnail.png",
+    "screenshots": [],
+    "sourceUrl": "https://github.com/Jellyfin-PG/Custom-Mods/tree/main/VideoTuner",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/video-tuner-client.v1.min.js",
+        "version": "1.2.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.2.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bluelight-filter",
+    "name": "Bluelight Filter",
+    "author": "grimmdev",
+    "description": "A button to your video player to filter bluelight.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.11+",
+    "tags": [
+      "ui",
+      "video",
+      "player"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/Custom-Mods@main/BluelightFilter/thumbnail.png",
+    "screenshots": [],
+    "sourceUrl": "https://github.com/Jellyfin-PG/Custom-Mods/tree/main/BluelightFilter",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/Custom-Mods@main/BluelightFilter/BluelightFilter.min.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "random-movie",
+    "name": "Random Movie",
+    "author": "grimmdev",
+    "description": "Roll the dice and pick a random movie.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.11+",
+    "tags": [
+      "ui",
+      "movies"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/Custom-Mods@main/RandomMovie/thumbnail.png",
+    "screenshots": [],
+    "sourceUrl": "https://github.com/Jellyfin-PG/Custom-Mods/tree/main/RandomMovie",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/Custom-Mods@main/RandomMovie/RandomMovie.min.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [
+      "jellyfin.read"
+    ],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "seasonal-effects",
+    "name": "Seasonal Effects",
+    "author": "grimmdev",
+    "description": "Decorate your jellyfin with seasonal effects.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.11+",
+    "tags": [
+      "ui",
+      "particles",
+      "seasons"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/Custom-Mods@main/SeasonalEffects/thumbnail.png",
+    "screenshots": [],
+    "sourceUrl": "https://github.com/Jellyfin-PG/Custom-Mods/tree/main/SeasonalEffects",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/Custom-Mods@main/SeasonalEffects/SeasonalEffects.min.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rating-badges",
+    "name": "Rating Badges",
+    "author": "grimmdev",
+    "description": "Rating badges for imdb, and rotten tomatoes.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.11+",
+    "tags": [
+      "ui",
+      "badges",
+      "ratings"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/Custom-Mods@main/RatingBadges/thumbnail.png",
+    "screenshots": [],
+    "sourceUrl": "https://github.com/Jellyfin-PG/Custom-Mods/tree/main/RatingBadges",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/Custom-Mods@main/RatingBadges/RatingBadges.min.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "new-arrivals-badge",
+    "name": "New Arrivals Badge",
+    "author": "grimmdev",
+    "description": "A custom badge for items to jellyfin, that shows newly added items.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.11+",
+    "tags": [
+      "ui",
+      "badges"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/Custom-Mods@main/NewArrivals/thumbnail.png",
+    "screenshots": [],
+    "sourceUrl": "https://github.com/Jellyfin-PG/Custom-Mods/tree/main/NewArrivals",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/Custom-Mods@main/NewArrivals/NewArrivals.min.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hover-details",
+    "name": "Hover Details",
+    "author": "grimmdev",
+    "description": "A popup on hover for movie/show/episode details.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.11+",
+    "tags": [
+      "ui",
+      "popup"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/Custom-Mods@main/HoverDetails/thumbnail.png",
+    "screenshots": [],
+    "sourceUrl": "https://github.com/Jellyfin-PG/Custom-Mods/tree/main/HoverDetails",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/Custom-Mods@main/HoverDetails/HoverDetails.min.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [
+      "jellyfin.read"
+    ],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "screenshot-button",
+    "name": "Video Screenshot",
+    "author": "grimmdev",
+    "description": "Adds a screenshot button to the video player, Supports single capture and auto-screenshot mode at a configurable interval.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.11+",
+    "tags": [
+      "player",
+      "video"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/Custom-Mods@main/Screenshot/thumbnail.png",
+    "screenshots": [],
+    "sourceUrl": "https://github.com/Jellyfin-PG/Custom-Mods/tree/main/Screenshot",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/Custom-Mods@main/Screenshot/Screenshot.min.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "360-vr-player",
+    "name": "360 VR Player",
+    "author": "Mix1C",
+    "description": "A custom 360 degree video player.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.10+",
+    "tags": [
+      "vr",
+      "ui",
+      "player",
+      "video"
+    ],
+    "previewUrl": "https://i.imgur.com/jNiUciN.png",
+    "screenshots": [],
+    "sourceUrl": "https://github.com/Mix1C/Jellyfin-360VR-Player",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Mix1C/Jellyfin-360VR-Player@main/jellyfin-vr.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.10+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "3d-movie-posters",
+    "name": "3D Movie Posters",
+    "author": "grimmdev",
+    "description": "3d movie posters that rotate with your mouse.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.11+",
+    "tags": [
+      "ui"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/Custom-Mods@main/3DMoviePosters/thumbnail.png",
+    "screenshots": [],
+    "sourceUrl": "https://github.com/Jellyfin-PG/Custom-Mods/tree/main/3DMoviePosters",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/Custom-Mods@main/3DMoviePosters/3DMoviePosters.min.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "weather-icon",
+    "name": "Weather Icon",
+    "author": "grimmdev",
+    "description": "Shows the current weather in the header.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.11+",
+    "tags": [
+      "ui",
+      "header"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/Custom-Mods@main/WeatherIcon/thumbnail.png",
+    "screenshots": [],
+    "sourceUrl": "https://github.com/Jellyfin-PG/Custom-Mods/tree/main/WeatherIcon",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/Custom-Mods@main/WeatherIcon/WeatherIcon.min.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "time-icon",
+    "name": "Time Icon",
+    "author": "grimmdev",
+    "description": "Shows the current time in the header.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.11+",
+    "tags": [
+      "ui",
+      "header"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/Custom-Mods@main/TimeIcon/thumbnail.png",
+    "screenshots": [],
+    "sourceUrl": "https://github.com/Jellyfin-PG/Custom-Mods/tree/main/TimeIcon",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/Custom-Mods@main/TimeIcon/TimeIcon.min.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "active-session-counter-icon",
+    "name": "Active Session Counter Icon",
+    "author": "grimmdev",
+    "description": "Shows the active content watching sessions.",
+    "version": "1.2.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.11+",
+    "tags": [
+      "ui",
+      "header"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/Custom-Mods@main/ActiveSessionCounterIcon/thumbnail.png",
+    "screenshots": [],
+    "sourceUrl": "https://github.com/Jellyfin-PG/Custom-Mods/tree/main/ActiveSessionCounterIcon",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/session-counter-client.v2.min.js",
+        "version": "1.2.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [
+      "jellyfin.read"
+    ],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.2.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "latency-icon",
+    "name": "Latency Icon",
+    "author": "grimmdev",
+    "description": "Shows the current latency in the header.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.11+",
+    "tags": [
+      "ui",
+      "header"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/Custom-Mods@main/LatencyIcon/thumbnail.png",
+    "screenshots": [],
+    "sourceUrl": "https://github.com/Jellyfin-PG/Custom-Mods/tree/main/LatencyIcon",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/Custom-Mods@main/LatencyIcon/LatencyIcon.min.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "battery-icon",
+    "name": "Battery Icon",
+    "author": "grimmdev",
+    "description": "Shows the current battery in the header.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.11+",
+    "tags": [
+      "ui",
+      "header"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/Custom-Mods@main/BatteryIcon/thumbnail.png",
+    "screenshots": [],
+    "sourceUrl": "https://jellyfin-pg.github.io/JellyFrame/",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/Custom-Mods@main/BatteryIcon/BatteryIcon.min.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "recent-movie-pills",
+    "name": "Recent Movie Pills",
+    "author": "grimmdev",
+    "description": "Shows pills that filter recent movies on the home page.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.11+",
+    "tags": [
+      "ui",
+      "movies"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/recent-movie-pills.png",
+    "screenshots": [],
+    "sourceUrl": "https://jellyfin-pg.github.io/JellyFrame/",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/recent-movie-pills-client.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jelly-chat",
+    "name": "JellyChat",
+    "author": "grimmdev",
+    "description": "Jellyfin chat, directly in real time with other users.",
+    "version": "1.0.2",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.11+",
+    "tags": [
+      "ui",
+      "header",
+      "chat"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/jelly-chat.png",
+    "screenshots": [],
+    "sourceUrl": "https://jellyfin-pg.github.io/JellyFrame/",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/jelly-chat-client.js",
+        "version": "1.0.2",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      },
+      {
+        "type": "server",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/jelly-chat-server.js",
+        "version": "1.0.2",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Server backend script"
+        ]
+      }
+    ],
+    "permissions": [
+      "jellyfin.read",
+      "store",
+      "jellyfin.admin"
+    ],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.2",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jellyfin-episodes-ratings-grid",
+    "name": "Jellyfin Episodes Ratings Grid",
+    "author": "Damocles-fr",
+    "description": "Display the IMDb episodes ratings heatmap grid on Jellyfin TV Series pages. The userscript adds the grid to TV Shows pages between Seasons and Cast, inside a drop-down section that stays closed by default to avoid spoilers.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.11+",
+    "tags": [
+      "ui",
+      "episodes",
+      "imdb"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Damocles-fr/jellyfin-imdb-episodes-heatmap-ratings-grid@main/assets/Jellyfin-Episodes-Ratings-Grid-1.4.webp",
+    "screenshots": [],
+    "sourceUrl": "https://github.com/Damocles-fr/jellyfin-imdb-episodes-heatmap-ratings-grid",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Damocles-fr/jellyfin-imdb-episodes-heatmap-ratings-grid@main/Jellyfin-Episodes-Ratings-Grid-JF-Library-Links.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "multi-view-live-stream",
+    "name": "Multiview Livestream",
+    "author": "Grimmdev",
+    "description": "Multiview livestream functionality, with audio focus.",
+    "version": "1.1.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.11+",
+    "tags": [
+      "ui",
+      "tv"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/multi-view-live-stream.png",
+    "screenshots": [],
+    "sourceUrl": "https://jellyfin-pg.github.io/JellyFrame/",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/multi-view-live-stream-client.min.js",
+        "version": "1.1.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.1.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "weather-card-homepage",
+    "name": "Weather App Homepage",
+    "author": "Grimmdev",
+    "description": "A homepage app that adds the weather forecast.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.11+",
+    "tags": [
+      "ui",
+      "homepage"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/weather-card.png",
+    "screenshots": [],
+    "sourceUrl": "https://jellyfin-pg.github.io/JellyFrame/",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/weather-card-client.v1.min.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [
+      "home-app-layout"
+    ],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "my-pet-homepage",
+    "name": "My Pet App Homepage",
+    "author": "Grimmdev",
+    "description": "A homepage app that adds a pet to take care of.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.11+",
+    "tags": [
+      "ui",
+      "homepage"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/my-pet.png",
+    "screenshots": [],
+    "sourceUrl": "https://jellyfin-pg.github.io/JellyFrame/",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/my-pet.min.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [
+      "home-app-layout"
+    ],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "server-health-card-homepage",
+    "name": "Server Health App Homepage",
+    "author": "Grimmdev",
+    "description": "A homepage app that adds server health.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.11+",
+    "tags": [
+      "ui",
+      "homepage"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/server-health-card.png",
+    "screenshots": [],
+    "sourceUrl": "https://jellyfin-pg.github.io/JellyFrame/",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/server-health-card-client.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [
+      "home-app-layout"
+    ],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flip-coin-card-homepage",
+    "name": "Coin Flip App Homepage",
+    "author": "Grimmdev",
+    "description": "A homepage app that adds fun.",
+    "version": "1.0.0",
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-09-15",
+    "jellyfin": "10.11+",
+    "tags": [
+      "ui",
+      "homepage"
+    ],
+    "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/flip-coin-card.png",
+    "screenshots": [],
+    "sourceUrl": "https://jellyfin-pg.github.io/JellyFrame/",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/JellyFrame-Resources@main/mods/flip-coin-card-client.js",
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "jellyfin": "10.11+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [
+      "home-app-layout"
+    ],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-15",
+        "changes": [
+          "Initial release"
+        ]
+      }
+    ]
+  }
+]
