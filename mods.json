@@ -943,7 +943,7 @@
     "name": "Rating Badges",
     "author": "grimmdev",
     "description": "Rating badges for imdb, and rotten tomatoes.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "jellyfin": "10.11+",
     "tags": [
       "ui",
@@ -951,9 +951,9 @@
       "ratings"
     ],
     "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/Custom-Mods@main/RatingBadges/thumbnail.png",
-    "sourceUrl": "https://github.com/Jellyfin-PG/Custom-Mods/tree/main/RatingBadges",
+    "sourceUrl": "https://github.com/rodion981/JellyFrame-Resources/blob/add-quality-badges/mods/rating-badges-compact.js",
     "cssUrl": "",
-    "jsUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/Custom-Mods@main/RatingBadges/RatingBadges.min.js",
+    "jsUrl": "https://raw.githubusercontent.com/rodion981/JellyFrame-Resources/1121eb4c4662252344ec81559ac7e14b77367780/mods/rating-badges-compact.min.js",
     "serverJs": "",
     "permissions": [],
     "requires": [],
@@ -1344,5 +1344,17 @@
     "requires": ["home-app-layout"],
     "preconnect": [],
     "vars": []
+  },
+  {
+    "id": "quality-badges",
+    "name": "Quality Badges",
+    "author": "rodion981",
+    "description": "Compact quality badges on movies and episodes, shared badges on collections, and resolution summaries on series and seasons. Configure badges and libraries from the library toolbar.",
+    "version": "1.0.3",
+    "jellyfin": "10.10+",
+    "tags": ["ui", "metadata", "badges"],
+    "previewUrl": "https://raw.githubusercontent.com/rodion981/jellyfin-quality-badges/main/thumbnail.png",
+    "sourceUrl": "https://github.com/rodion981/jellyfin-quality-badges",
+    "jsUrl": "https://raw.githubusercontent.com/rodion981/jellyfin-quality-badges/8b29b360909e474871f6ae38be6630c024d3abe1/QualityBadges.min.js"
   }
 ]

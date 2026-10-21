@@ -1928,9 +1928,9 @@
     "name": "Rating Badges",
     "author": "grimmdev",
     "description": "Rating badges for imdb, and rotten tomatoes.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "createdAt": "2026-01-10",
-    "updatedAt": "2026-09-15",
+    "updatedAt": "2026-10-21",
     "jellyfin": "10.11+",
     "tags": [
       "ui",
@@ -1939,16 +1939,16 @@
     ],
     "previewUrl": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/Custom-Mods@main/RatingBadges/thumbnail.png",
     "screenshots": [],
-    "sourceUrl": "https://github.com/Jellyfin-PG/Custom-Mods/tree/main/RatingBadges",
+    "sourceUrl": "https://github.com/rodion981/JellyFrame-Resources/blob/add-quality-badges/mods/rating-badges-compact.js",
     "files": [
       {
         "type": "js",
-        "url": "https://cdn.jsdelivr.net/gh/Jellyfin-PG/Custom-Mods@main/RatingBadges/RatingBadges.min.js",
-        "version": "1.0.0",
-        "date": "2026-09-15",
+        "url": "https://raw.githubusercontent.com/rodion981/JellyFrame-Resources/1121eb4c4662252344ec81559ac7e14b77367780/mods/rating-badges-compact.min.js",
+        "version": "1.0.1",
+        "date": "2026-10-21",
         "jellyfin": "10.11+",
         "changelog": [
-          "Client browser mod script"
+          "Smaller rating badges for narrow poster cards"
         ]
       }
     ],
@@ -1957,6 +1957,13 @@
     "preconnect": [],
     "vars": [],
     "changelog": [
+      {
+        "version": "1.0.1",
+        "date": "2026-10-21",
+        "changes": [
+          "Smaller rating badges for narrow poster cards"
+        ]
+      },
       {
         "version": "1.0.0",
         "date": "2026-09-15",
@@ -2747,6 +2754,56 @@
         "date": "2026-09-15",
         "changes": [
           "Initial release"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "quality-badges",
+    "name": "Quality Badges",
+    "author": "rodion981",
+    "description": "Compact quality badges on movies and episodes, shared badges on collections, and resolution summaries on series and seasons. Configure badges and libraries from the library toolbar.",
+    "version": "1.0.3",
+    "createdAt": "2026-09-28",
+    "updatedAt": "2026-10-21",
+    "jellyfin": "10.10+",
+    "tags": [
+      "ui",
+      "metadata",
+      "badges"
+    ],
+    "previewUrl": "https://raw.githubusercontent.com/rodion981/jellyfin-quality-badges/main/thumbnail.png",
+    "screenshots": [],
+    "sourceUrl": "https://github.com/rodion981/jellyfin-quality-badges",
+    "files": [
+      {
+        "type": "js",
+        "url": "https://raw.githubusercontent.com/rodion981/jellyfin-quality-badges/8b29b360909e474871f6ae38be6630c024d3abe1/QualityBadges.min.js",
+        "version": "1.0.3",
+        "date": "2026-10-21",
+        "jellyfin": "10.10+",
+        "changelog": [
+          "Client browser mod script"
+        ]
+      }
+    ],
+    "permissions": [],
+    "requires": [],
+    "preconnect": [],
+    "vars": [],
+    "changelog": [
+      {
+        "version": "1.0.3",
+        "date": "2026-10-21",
+        "changes": [
+          "Show all episode resolutions on series and season cards"
+        ]
+      },
+      {
+        "version": "1.0.2",
+        "date": "2026-10-21",
+        "changes": [
+          "Show shared quality badges on movie collections"
         ]
       }
     ]
